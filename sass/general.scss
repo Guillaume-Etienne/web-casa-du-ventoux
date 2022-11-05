@@ -1,0 +1,174 @@
+@import "./variables";
+@import "./menu_burger";
+@import "./animations";
+
+// general, puis Accueil, prix, galerie, infos
+
+*{
+    box-sizing: border-box;     
+}
+a{
+    text-decoration: none;
+    color: $colorprimary;
+    &:visited{
+        color: $colorprimary;
+    }        
+}
+body
+{
+    margin: 0;    
+    padding: 0;
+    min-width: 380px;
+    max-width: 1400px;
+    background: $colorbackground;
+    color: $colorprimary;
+    font-family: "Roboto", "Avenir", sans-serif;
+    animation: fromUp 1.8s;
+    & em{
+        font-style:normal;         
+        text-shadow: 0 0 2px $textshadow;
+    }
+    & a {
+        font-weight: bold;
+    }
+}
+header{    
+    position:sticky;
+    background-color: black;
+    opacity: 0.8;    
+    // box-shadow: -1px 31px 32px 24px $colorbackground;
+    top:0px;
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+h1, h2, h3{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 1.8em;
+}
+h2{
+    font-size: 1.1em;
+}
+#lang {
+    background-color: $colorsecondary;        
+        border-radius: 20px;
+        padding: 0 20px 0 20px;
+}
+
+main{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    & p{
+        text-align: center;
+        margin: 0 5px;
+    }
+}
+footer{
+    margin-top: 0;
+    padding: 10px;
+    background-color: $colorbackground;
+    text-align: center;
+    & p {
+        margin-top: 0;
+    } 
+    & #footicons{
+        display: flex;
+        padding: 0;
+        justify-content:center;
+        & img{
+            width: 50px;
+            margin: 10px 20px 10px 20px;
+        }
+    }    
+}
+
+// ------------------------------- Accueil
+button {
+    display:block;
+    margin: 20px;  
+    background: black;
+    border: solid #FFFFFF 1px;           
+    border-radius: 0;
+    color: white;
+    font-family: Arial;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 20px;        
+    text-align: center;
+    transition: 0.4s;
+    &:hover {
+    }
+}
+.mainpage{
+    min-height: 700px;
+    & h3 {
+        font-family: 'Kalam', cursive;
+        font-style: italic;
+        font-size: 3em;
+    }
+    & h2 {
+        font-size: 3em;
+    }
+    & p {
+
+    }    
+}
+.mainpagewhite{
+    background: #F1F4F7;
+    & h2, p{
+        color: $colortextblack;
+    }
+    & h3{
+        color: $colorred;
+    }
+    & img{
+        display: block;
+        margin: 20px auto 80px auto;
+        width: 90%;
+        border-radius: 10px;
+    }
+}
+.mainpagefull {
+    & h3{
+        color: $colorred;
+    }
+    & img{
+        display: block;
+        margin: 20px auto;
+        max-height: 500px;
+        border-radius: 10px;
+    }    
+}
+// #intro{
+//     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/main.jpeg) no-repeat fixed 50% 50%;
+//     // linear grad pour assombrir
+//     background-size: cover;    
+//     height: 850px;
+//     margin: -90px 0 0 0;
+//     padding: 250px 0 0 0;
+// }
+#resto{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/Resto.webp) no-repeat fixed 50% 50%;
+    // linear grad pour assombrir
+    background-size: cover;    
+    padding: 250px 0 0 0;
+}
+
+// vite fais pour la prez
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    & img{
+        max-width: 200px;
+    }
+}
+
+// hallucinant : après plusieurs manip, le responsive ne fonctionne qu'en important ici ci-dessous
+@import "./desktopresponsive";
+
