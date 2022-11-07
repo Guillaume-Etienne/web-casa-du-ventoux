@@ -23,7 +23,7 @@ body
     background: $colorbackground;
     color: $colorprimary;
     font-family: "Roboto", "Avenir", sans-serif;
-    animation: fromUp 1.8s;
+    font-weight: lighter;    
     & em{
         font-style:normal;         
         text-shadow: 0 0 2px $textshadow;
@@ -47,18 +47,80 @@ h1, h2, h3{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    color: black;
+    
 }
 h1{
-    font-size: 1.8em;
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
 }
 h2{
     font-size: 1.1em;
 }
-#lang {
-    background-color: $colorsecondary;        
-        border-radius: 20px;
-        padding: 0 20px 0 20px;
+p{
+    font-size: 0.9em;
 }
+.traithorizon{
+    display: inline-block;
+    border-top: 0.5px solid grey;
+    width : 70px;
+    margin: 10px 10px 3px 10px;
+}
+.italic{
+    font-style: italic;
+    letter-spacing: 0.1em;   
+}
+.times{
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    margin-top: 30px;
+    width: 100%;
+}
+.paragraph{
+    margin-top: 20px;
+    & p{
+        color: grey;
+        margin: 10px 30px 10px 30px;
+        line-height: 2em;
+    }
+}
+#noschambres{
+    margin-top: 20px;
+    background: url(../img/2.webp) no-repeat  50% 50%;
+    background-size: cover;    
+}
+.white{
+    background-color: white;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    & button {
+        width: 60%;
+        color: black;
+        background: white;
+        border: solid 1px black;
+    }
+}
+#nosservices{
+    margin-top: 40px; 
+    & figure{        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & img{
+            width: 30px;
+        }
+    }
+    & figcaption{
+        & h4{
+            text-align: center;
+        }
+    }
+}
+
 
 main{
     margin-top: 15px;
@@ -72,11 +134,17 @@ main{
 footer{
     margin-top: 0;
     padding: 10px;
-    background-color: $colorbackground;
-    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    text-align: center;    
     & p {
         margin-top: 0;
-    } 
+    }
+    & a {
+        color: white;
+    }
     & #footicons{
         display: flex;
         padding: 0;
@@ -86,6 +154,20 @@ footer{
             margin: 10px 20px 10px 20px;
         }
     }    
+}
+#footlinks{    
+    display: flex;
+    flex-direction: column;
+    & a{
+        font-family: "Roboto", "Avenir", sans-serif;
+        font-size: 0.9em;
+        font-weight: 100;
+        color: white;
+        margin-top: 20px;
+    }
+}
+#copyright{
+    margin-top: 20px;
 }
 
 // ------------------------------- Accueil

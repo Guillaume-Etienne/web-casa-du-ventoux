@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0bdd5e4611.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/general.css">    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Noto+Sans+Limbu&display=swap" rel="stylesheet">
     <title>Casa du Ventoux, votre guest house au petit soin en Provence</title>
@@ -39,37 +40,80 @@
     <main>
         <section id="intro">
             <h1>Casa du Ventoux</h1>
-            <p>Maison d'hôtes</p>
-            <div id="intropic"></div>
+            <p class="italic times"> <span class="traithorizon"></span> Maison d'hôtes <span class="traithorizon"></span> </p>
+            <div id="intropic">
+                <img src="./img/1.webp" alt="Belle maison et sa piscine">
+            </div>
         </section>
-        <section id="about">
+        <section class="paragraph" id="about">
             <h2>à propos</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dicta dolore vel itaque quidem iste neque, numquam illo tempora nesciunt nihil voluptatem odit debitis dolorem quo harum reprehenderit facilis sunt.
+            <p class="italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dicta dolore vel itaque quidem iste neque, numquam illo tempora nesciunt nihil voluptatem odit debitis dolorem quo harum reprehenderit facilis sunt.
             </p>
         </section>
         <section id="noschambres">         
             <!-- image de fond -->
-            <div class="whitediv">
+            <div class="paragraph white">
                 <h2>nos chambres</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio consequatur excepturi, odio laudantium vel maxime neque cupiditate quod voluptate quidem blanditiis ea quibusdam velit repellendus laborum accusantium inventore ab.
+                <p class="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat optio consequatur excepturi, odio laudantium vel maxime neque cupiditate quod voluptate quidem blanditiis ea quibusdam velit repellendus laborum accusantium inventore ab.
                 </p>
                 <button>Voir Disponibilités</button>
+            </div>
+        </section>
+        <section class="paragraph">            
+            <h2>nos services</h2>
+            <div id="nosservices">
+                <figure>
+                    <img src="/icons/house-solid.svg" alt="maison">
+                    <figcaption>                        
+                        <h4>Petit déjeuner</h4>
+                        <p>>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod libero architecto soluta, dolores pariatur nisi</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/icons/house-solid.svg" alt="maison">
+                    <figcaption>                        
+                        <h4>Petit déjeuner</h4>
+                        <p>>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod libero architecto soluta, dolores pariatur nisi</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/icons/house-solid.svg" alt="maison">
+                    <figcaption>                        
+                        <h4>Petit déjeuner</h4>
+                        <p>>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod libero architecto soluta, dolores pariatur nisi</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/icons/house-solid.svg" alt="maison">
+                    <figcaption>                        
+                        <h4>Petit déjeuner</h4>
+                        <p>>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod libero architecto soluta, dolores pariatur nisi</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="/icons/house-solid.svg" alt="maison">
+                    <figcaption>                        
+                        <h4>Petit déjeuner</h4>
+                        <p>>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod libero architecto soluta, dolores pariatur nisi</p>
+                    </figcaption>
+                </figure>
             </div>
         </section>
     </main>
 
     <footer>
-        <div>
+        <div id="footlinks">
             <a href="#">Mentions légales</a>            
             <a href="#">Politique de confidentialité</a>
             <a href="#">Conditions d'utilisation</a>
         </div>
         <div>
-            <p>
+            <p id="copyright">
                 © <a href="https://fto110.wixsite.com/air-tricks">Air Tricks prod</a>
             </p>
         </div>              
     </footer>
+    
     <!-- pour aos, lib d'animation des éléments  -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/burger.js"></script>        
