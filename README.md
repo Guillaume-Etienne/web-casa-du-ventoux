@@ -1,4 +1,4 @@
-# web_BKC
-Website BKC
-Pure HTML SASS JS webssite coded with Visual Studio Code
+# web_Casa_du_Ventoux
+Website for a french Guest House.
+SASS, HTML, JS technoligies involved
 
