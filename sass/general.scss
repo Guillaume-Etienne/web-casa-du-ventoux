@@ -10,9 +10,9 @@
 a{
     text-decoration: none;
     color: $colorprimary;
-    &:visited{
-        color: $colorprimary;
-    }        
+    // &:visited{
+    //     color: $colorprimary;
+    // }        
 }
 body
 {
