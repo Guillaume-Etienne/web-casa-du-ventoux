@@ -25,8 +25,8 @@ body
     font-family: "Roboto", "Avenir", sans-serif;
     font-weight: lighter;    
     & em{
-        font-style:normal;         
-        text-shadow: 0 0 2px $textshadow;
+        // font-style:normal;         
+        text-shadow: 0 0 1px $textshadow;
     }
     & a {
         font-weight: bold;
@@ -85,7 +85,7 @@ img{
         line-height: 2em;
     }
 }
-#noschambres{
+#lamaison{
     margin-top: 20px;
     background: url(../img/2.webp) no-repeat  50% 50%;
     background-size: cover;    
