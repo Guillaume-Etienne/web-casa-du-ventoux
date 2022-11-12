@@ -70,22 +70,21 @@ p{
     font-style: italic;
     letter-spacing: 0.1em;   
 }
-.mini{
-    display:inline;
-    width: 40px;
-    margin: 0;  
-    background: lightgray;
-    border: solid #FFFFFF 1px;           
+.mini{ 
+    display:inline !important;
+    width: 40px !important;
+    margin: 0 !important;  
+    background: transparent !important;
+    border: solid 1px lightgray !important;            
     border-radius: 10px;
-    color: black;
+    color: gray;
     font-family: Arial;
     font-size: 1em;
     font-weight: 100;
     padding: 5px;        
     text-align: center;
-    transition: 0.4s;
-    &:hover {
-    }
+    background: white;
+        
 }
 .hidden{
     display: none;

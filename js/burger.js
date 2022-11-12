@@ -23,15 +23,20 @@ function closeNav() {
 }
 
 // ======================  button hidden : ===================
-let togg1 = document.getElementById("togg1");
-// let togg2 = document.getElementById("togg2");
-let t1 = document.getElementById("t1");
-// let d2 = document.getElementById("d2");
-togg1.addEventListener("click", () => {
-  if(getComputedStyle(t1).display != "none"){
-    t1.style.display = "none";
-  } else {
-    t1.style.display = "block";
-  }
-})
+var nbDeToggles=2
+for (var i = 1; i<=nbDeToggles; i++){
+  var tEnCours = ("t"+i);
+  var toggEnCours = ("togg"+i);
+  console.log("le t en cours : "+tEnCours)
+  console.log("le toggle en cours : "+toggEnCours);
 
+  let toggBoucle = document.getElementById(toggEnCours);
+  let tBoucle = document.getElementById(tEnCours);
+    toggBoucle.addEventListener("click", () => {
+    if(getComputedStyle(tBoucle).display != "none"){
+      tBoucle.style.display = "none";
+    } else {
+      tBoucle.style.display = "block";
+    }
+  })
+}
