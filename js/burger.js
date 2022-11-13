@@ -23,7 +23,7 @@ function closeNav() {
 }
 
 // ======================  button hidden : ===================
-var nbDeToggles=2
+var nbDeToggles=5
 for (var i = 1; i<=nbDeToggles; i++){
   var tEnCours = ("t"+i);
   var toggEnCours = ("togg"+i);

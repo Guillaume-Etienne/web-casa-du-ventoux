@@ -70,7 +70,7 @@ p{
     font-style: italic;
     letter-spacing: 0.1em;   
 }
-.mini{ 
+.mini{ //dédié aux boutons
     display:inline !important;
     width: 40px !important;
     margin: 0 !important;  
@@ -100,22 +100,22 @@ img{
     margin-top: 20px;
     & p{
         color: $colorgreytext1;
-        margin: 10px 30px 10px 30px;
+        margin: 10px 10px;
         line-height: 2em;
     }
 }
 #lamaison{
-    margin-top: 20px;
+    margin-top: 30px;
     background: url(../img/2.webp) no-repeat  50% 50%;
     background-size: cover;    
 }
 .white{
     background-color: white;
-    margin: 40px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     & button {
         width: 60%;
         color: black;
