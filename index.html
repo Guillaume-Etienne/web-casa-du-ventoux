@@ -18,13 +18,15 @@
         <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">&times;</a>
             <ul>
-                <li><a href="#">accueil</a></li>
-                <li><a href="#">à propos</a></li>
-                <li><a href="#">chambres</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">galerie</a></li>
-                <li><a href="#">activités</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#intro">Accueil</a></li>
+                <li><a href="#lamaison">La maison</a></li>
+                <li><a href="#lejardin">Le jardin</a></li>
+                <li><a href="#activites">Les activités</a></li>
+                <li><a href="#environs">Les environs</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#galerie">Galerie</a></li>                
+                <li><a href="#serices">Services</a></li>
+                <li><a href="#footlinks">Contact</a></li>
             </ul>
         </div>      
         <a href="#" id="openBtn">
@@ -35,7 +37,7 @@
         </span>
         </a>
         <div id="dispo">
-            <button>Voir Disponibilités</button>    
+            <button onclick="window.open('https://calendar.google.com/calendar/embed?src=casaduventoux%40gmail.com&ctz=UTC','_blank');">Voir Disponibilités</button>    
         </div>        
     </header>
 
@@ -86,7 +88,7 @@
                 </p>                
             </div>
         </section>
-        <section class="paragraph">            
+        <section class="paragraph" id="lejardin">            
             <h2>Le jardin</h2>
             <div id="intropic">
                 <img src="./img/3.webp" alt="Beau jardin dans la nature">
@@ -98,7 +100,72 @@
                 une plancha gaz.
             </p>            
         </section>
-        <section class="paragraph">            
+        
+        <section id="lamaison" id="activites">         
+            <!-- image de fond -->
+            <div class="paragraph white">
+                <h2>Les Activités</h2>
+                <p class="italic">
+                    Découvertes, sportives, détentes, une liste non exhaustive de nos préférées : <button class="mini" id="togg3">...</button>
+                </p>
+                <p class="hidden italic" id="t3">Sportives : vélo, VTT, escalade, via ferrata, randonnées, accrobranche, parapente <br>
+                    Culturelles : Vaison La Romaine 30 min, Avignon : 1h00, Marseille : 2h00 <br>
+                    Découvertes : les marchés régionaux, le colorado provençal, la route des vins (Vacqueyras/Gigondas∕châteauneuf du pape), visite distillerie de Lavande, cueillette champignons…
+                </p> 
+            </div>
+        </section>
+        <section class="paragraph" id="environs">            
+            <h2>Le Village et les environs</h2>
+            <div>
+                <img src="./img/Village.webp" alt="village dans la nature">
+            </div>
+            <p class="italic">
+                Ils sont nombreux et pleins de charme, laissez nous vous les présenter : <button class="mini" id="togg4">...</button>
+            </p>
+            <p class="hidden italic" id="t4">       
+                <em>Savoillans</em>  est un petit village de Provence, où les journées sont rythmées par les jeux de boules et les discussions sur les bancs.
+                Vous pourrez aller chercher à pied, au village, du pain et des viennoiseries à la boulangerie artisanale avec une cuisson au feu de bois.
+                L’auberge vous accueillera pour une collation ou un repas gourmand. <br>
+                La vallée du Toulourenc longe la face nord du Ventoux, 3 villages : <br>
+                <em>Saint-Léger du Ventoux, Brantes et Savoillans</em>. La rivière Le Toulourenc coule (partiellement sec en été) à 50 mètres de la maison. <br>
+                <em>Montbrun les Bains :</em> Classé comme un des plus beaux villages de France, c’est aussi une Station thermale. Vous y trouverez un petit supermarché, une station essence,
+                une pharmacie, des restaurants et des cafés et quelques commerces (10 min en voiture). <br>
+                <em>Sault</em> à 20 minutes de route, ce gros village vous offre toutes les commodités d’une petite ville. Supermarché, station essence, pharmacie, commerces.
+                Pittoresque et typiquement provençale cette bourgade vous séduira par son charme.
+            </p>            
+        </section>        
+        <section id="lamaison" id="tarifs">         
+            <!-- image de fond -->
+            <div class="paragraph white">
+                <h2>tarifs</h2>
+                <p class="italic">
+                    Adaptés en fonction de la saison, voici nos tarifs et conditions : <button class="mini" id="togg5">...</button>
+                </p>
+                <p class="hidden italic" id="t5">                 
+                Du 1er Juin au 30 Juin : 180 € / nuit<br>
+                du 1er Juillet au 31 Août : 215 € / nuit<br>
+                du 1er Septembre au 30 Septembre : 180 € / nuit<br>
+                du 1er Octobre au 31 Mai : 150 € / nuit<br>
+                <em>Conditions :</em>
+                Ménage obligatoire : 90€<br>
+                animaux acceptés (sup de 80 € / animal pour la semaine)<br>
+                en haute saison la location est du samedi au samedi (mini 7 nuits) <br>
+                Une caution de 1000 € est demandée à votre arrivée.
+                </p>                
+                <button onclick="window.open('https://calendar.google.com/calendar/embed?src=casaduventoux%40gmail.com&ctz=UTC','_blank');">Voir Disponibilités</button>
+                
+            </div>
+        </section>
+        <section class="paragraph" id="galerie">            
+            <h2>Galerie</h2>
+            <div id="intropic">
+                <img src="./img/galery/gal.webp" alt="Beau jardin dans la nature">
+            </div>
+            <p class="italic">
+                Ajouterons une galerie ici
+            </p>            
+        </section>        
+        <section class="paragraph" id="services">            
             <h2>nos services</h2>
             <div id="nosservices">
                 <figure>
@@ -131,63 +198,9 @@
                             Merci de ramasser après votre animal de compagnie.
                         </p>
                     </figcaption>
-                </figure>                
+                </figure>
             </div>
         </section>
-        <section id="lamaison">         
-            <!-- image de fond -->
-            <div class="paragraph white">
-                <h2>Les Activités</h2>
-                <p class="italic">
-                    Découvertes, sportives, détentes, une liste non exhaustive de nos préférées : <button class="mini" id="togg3">...</button>
-                </p>
-                <p class="hidden italic" id="t3">Sportives : vélo, VTT, escalade, via ferrata, randonnées, accrobranche, parapente <br>
-                    Culturelles : Vaison La Romaine 30 min, Avignon : 1h00, Marseille : 2h00 <br>
-                    Découvertes : les marchés régionaux, le colorado provençal, la route des vins (Vacqueyras/Gigondas∕châteauneuf du pape), visite distillerie de Lavande, cueillette champignons…
-                </p> 
-            </div>
-        </section>
-        <section class="paragraph">            
-            <h2>Le Village et les environs</h2>
-            <div>
-                <img src="./img/Village.webp" alt="village dans la nature">
-            </div>
-            <p class="italic">
-                Ils sont nombreux et pleins de charme, laissez nous vous les présenter : <button class="mini" id="togg4">...</button>
-            </p>
-            <p class="hidden italic" id="t4">       
-                <em>Savoillans</em>  est un petit village de Provence, où les journées sont rythmées par les jeux de boules et les discussions sur les bancs.
-                Vous pourrez aller chercher à pied, au village, du pain et des viennoiseries à la boulangerie artisanale avec une cuisson au feu de bois.
-                L’auberge vous accueillera pour une collation ou un repas gourmand. <br>
-                La vallée du Toulourenc longe la face nord du Ventoux, 3 villages : <br>
-                <em>Saint-Léger du Ventoux, Brantes et Savoillans</em>. La rivière Le Toulourenc coule (partiellement sec en été) à 50 mètres de la maison. <br>
-                <em>Montbrun les Bains :</em> Classé comme un des plus beaux villages de France, c’est aussi une Station thermale. Vous y trouverez un petit supermarché, une station essence,
-                une pharmacie, des restaurants et des cafés et quelques commerces (10 min en voiture). <br>
-                <em>Sault</em> à 20 minutes de route, ce gros village vous offre toutes les commodités d’une petite ville. Supermarché, station essence, pharmacie, commerces.
-                Pittoresque et typiquement provençale cette bourgade vous séduira par son charme.
-            </p>            
-        </section>        
-        <section id="lamaison">         
-            <!-- image de fond -->
-            <div class="paragraph white">
-                <h2>tarifs</h2>
-                <p class="italic">
-                    Adaptés en fonction de la saison, voici nos tarifs et conditions : <button class="mini" id="togg5">...</button>
-                </p>
-                <p class="hidden italic" id="t5">                 
-                Du 1er Juin au 30 Juin : 180 € / nuit<br>
-                du 1er Juillet au 31 Août : 215 € / nuit<br>
-                du 1er Septembre au 30 Septembre : 180 € / nuit<br>
-                du 1er Octobre au 31 Mai : 150 € / nuit<br>
-                <em>Conditions :</em>
-                Ménage obligatoire : 90€<br>
-                animaux acceptés (sup de 80 € / animal pour la semaine)<br>
-                en haute saison la location est du samedi au samedi (mini 7 nuits) <br>
-                Une caution de 1000 € est demandée à votre arrivée.
-                </p>
-                <button>Voir Disponibilités</button>
-            </div>
-        </section>        
     </main>
     <footer>
         <div id="footlinks">

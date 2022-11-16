@@ -7,7 +7,7 @@
         padding: 10px 20%;
     }
     .sidenav {
-        top: auto;
+        top: 20px;
         left: auto;
         height: 30px;
         width: 250px;
@@ -30,6 +30,10 @@
         font-size: 0.9em;
         display: block;
         transition: 0.3s;
+        &:hover{
+            color: #111;
+            // transform: none;
+        }
         &:visited{
                 color: white;
             }
