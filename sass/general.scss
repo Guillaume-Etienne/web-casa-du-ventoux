@@ -9,10 +9,7 @@
 }
 a{
     text-decoration: none;
-    color: $colorprimary;
-    // &:visited{
-    //     color: $colorprimary;
-    // }        
+    color: $colorprimary;        
 }
 body
 {
@@ -22,7 +19,8 @@ body
     // max-width: 1400px;
     background: $colorbackground;
     color: $colorprimary;
-    font-family: "Roboto", "Avenir", sans-serif;
+    // font-family: "Roboto", "Avenir", sans-serif;
+    font-family: 'Kalam', cursive;
     font-weight: lighter;    
     & em{
         // font-style:normal;         
@@ -36,7 +34,6 @@ header{
     position:sticky;
     background-color: black;
     opacity: 0.8;    
-    // box-shadow: -1px 31px 32px 24px $colorbackground;
     top:0px;
     padding: 0 10px 0 10px;
     display: flex;
@@ -111,11 +108,13 @@ img{
 }
 .white{
     background-color: white;
-    margin: 50px;
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    width: 380px;
+    min-height: 380px;
     & button {
         width: 60%;
         color: black;
