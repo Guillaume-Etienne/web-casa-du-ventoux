@@ -1,7 +1,8 @@
-// AOS (animation des divs)   / Buger menu    /
-// AOS.init(); //oui c'est tout, tout se fait direct dans le html
+// Buger menu  / Paralax
 
 // burger / button hidden /
+
+
 
 // ======================  burger : ===================
 var sidenav = document.getElementById("mySidenav");
@@ -40,3 +41,4 @@ for (var i = 1; i<=nbDeToggles; i++){
     }
   })
 }
+
