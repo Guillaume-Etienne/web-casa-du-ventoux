@@ -1,4 +1,4 @@
-// burger / button hidden / 
+// burger / correction bug burger / button hidden / 
 
 
 
@@ -8,7 +8,13 @@ var openBtn = document.getElementById("openBtn");
 // var openBtn = document.getElementsByClassName("burger-icon")
 var closeBtn = document.getElementById("closeBtn");
 
-openBtn.onclick = openNav;
+openBtn.addEventListener('click', function(event){
+  event.preventDefault
+  openNav()
+  console.log("click")
+})
+
+// openBtn.onclick = openNav;
 closeBtn.onclick = closeNav;
 
 /* Set the width of the side navigation to 250px */
@@ -21,8 +27,18 @@ function closeNav() {
   sidenav.classList.remove("active");
 }
 
+// ======================  Correction bug burger (le menu qui ne disparait pas) ===================
+let menuElements = document.getElementsByClassName("menuLinks");
+
+for (var i=0; i < menuElements.length; i++) {
+  menuElements[i].onclick = function(){      
+    sidenav.classList.remove("active")
+  }
+}
+
+
 // ======================  button hidden : ===================
-var nbDeToggles=5
+var nbDeToggles=5 //A remplir à la main.
 for (var i = 1; i<=nbDeToggles; i++){
   var tEnCours = ("t"+i);
   var toggEnCours = ("togg"+i);
