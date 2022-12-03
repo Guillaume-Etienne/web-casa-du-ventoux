@@ -1,4 +1,4 @@
-// general / pages / pages prix de l'ancien modèle - à la fin Palm / Welcome
+// general / pages / 
 @media screen and (min-width: 1280px) {    
     header{
         position:sticky;
@@ -57,6 +57,9 @@
             width: 200px;            
         }
     }
+    #dispo{
+        display: none;
+    }
     #nosservices{
         display: flex;
         flex-wrap: wrap;
@@ -70,9 +73,9 @@
         margin-top: 38px;
     }
     #lamaison{        
-        background-attachment: fixed;
-        background-position: center;
-        // background-repeat: no-repeat;        
+        // background-attachment: fixed;
+        // background-position: center;
+        // // background-repeat: no-repeat;        
     }
     footer{
         box-shadow: $shadowmobile;
