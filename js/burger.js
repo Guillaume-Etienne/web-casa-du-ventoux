@@ -1,6 +1,4 @@
-// Buger menu  / Paralax
-
-// burger / button hidden /
+// burger / button hidden / 
 
 
 
@@ -28,8 +26,8 @@ var nbDeToggles=5
 for (var i = 1; i<=nbDeToggles; i++){
   var tEnCours = ("t"+i);
   var toggEnCours = ("togg"+i);
-  console.log("le t en cours : "+tEnCours)
-  console.log("le toggle en cours : "+toggEnCours);
+  // console.log("le t en cours : "+tEnCours)
+  // console.log("le toggle en cours : "+toggEnCours);
 
   let toggBoucle = document.getElementById(toggEnCours);
   let tBoucle = document.getElementById(tEnCours);
@@ -41,4 +39,5 @@ for (var i = 1; i<=nbDeToggles; i++){
     }
   })
 }
+
 
