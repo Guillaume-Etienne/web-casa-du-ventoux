@@ -66,7 +66,10 @@ p{
 }
 .italic{
     font-style: italic;
-    letter-spacing: 0.1em;   
+    letter-spacing: 0.1em;
+}
+.txtjustify {
+    text-align: justify;
 }
 .mini{ //dédié aux boutons
     display:inline !important;
@@ -95,7 +98,7 @@ img{
     width: 100%;
 }
 .paragraph{
-    margin-top: 50px;
+    margin: 50px 30px 0 30px;
     & p{
         color: $colorgreytext1;
         margin: 40px 10px;
@@ -104,8 +107,9 @@ img{
 }
 #lamaison{
     margin-top: 30px;
-    background: url(../img/2.webp) no-repeat  50% 50%;
-    background-size: cover;
+    height: 400px;
+    background: url(../img/2.webp) no-repeat  20% 20%;
+    background-size:300% ;
     // test parallaxe
     background-attachment: fixed;
     background-position: center;
@@ -113,12 +117,12 @@ img{
 }
 .white{
     background-color: white;
-    margin: 15% 13%;
+    margin: 35% 33%;
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     width: auto;
     min-height: 380px;
     & button {

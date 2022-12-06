@@ -9,7 +9,7 @@ var openBtn = document.getElementById("openBtn");
 var closeBtn = document.getElementById("closeBtn");
 
 openBtn.addEventListener('click', function(event){
-  event.preventDefault
+  event.preventDefault //pourquoi il ne marche pas lui ?
   openNav()
   console.log("click")
 })
