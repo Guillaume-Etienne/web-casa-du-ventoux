@@ -10,8 +10,7 @@ var closeBtn = document.getElementById("closeBtn");
 
 openBtn.addEventListener('click', function(event){
   event.preventDefault //pourquoi il ne marche pas lui ?
-  openNav()
-  console.log("click")
+  openNav()  
 })
 
 // openBtn.onclick = openNav;
@@ -48,6 +47,7 @@ for (var i = 1; i<=nbDeToggles; i++){
   let toggBoucle = document.getElementById(toggEnCours);
   let tBoucle = document.getElementById(tEnCours);
     toggBoucle.addEventListener("click", () => {
+      console.log("click")
     if(getComputedStyle(tBoucle).display != "none"){
       tBoucle.style.display = "none";
     } else {
