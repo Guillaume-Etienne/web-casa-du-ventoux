@@ -117,14 +117,16 @@ img{
 }
 .white{
     background-color: white;
-    margin: 35% 33%;
-    
+    margin: -130px 33% 0 33%;    
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    width: auto;
-    min-height: 380px;
+        
+    & p{
+        margin: 0;
+        padding: 0;
+    }
     & button {
         width: 60%;
         color: black;

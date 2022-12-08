@@ -1,4 +1,4 @@
-// burger / correction bug burger / button hidden / 
+// burger / correction bug burger / button hidden /  parallax
 
 
 
@@ -55,5 +55,11 @@ for (var i = 1; i<=nbDeToggles; i++){
     }
   })
 }
-
+// ======================  Parallax : ===================
+var imageParallax = document.getElementsByClassName('parallaxedpic');
+new simpleParallax(imageParallax,
+   {
+	scale: 2,
+  orientation: 'down'
+});
 
