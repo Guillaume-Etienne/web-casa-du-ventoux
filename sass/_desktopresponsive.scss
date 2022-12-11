@@ -53,7 +53,14 @@
     .hiddenmobile{
         display: block;
     }
-    
+    // ---------------- la page elle même  -------------
+    #intro{
+        margin-top: 38px;
+    }
+    #welcometext{
+        margin: 40px 9%;
+        text-align: center;
+    }
     $whitheight:250px;
     .white{        
         margin: -$whitheight auto 0 auto;                
@@ -69,7 +76,7 @@
     .listing{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
     figcaption
     {
@@ -87,13 +94,7 @@
             width: 300px;
         }
     }   
-    #intro{
-        margin-top: 38px;
-    }
-    #welcometext{
-        margin: 40px 9%;
-        text-align: center;
-    }
+   
     #lamaison{        
         // background-attachment: fixed;
         // background-position: center;

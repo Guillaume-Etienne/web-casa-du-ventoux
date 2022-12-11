@@ -59,7 +59,7 @@ for (var i = 1; i<=nbDeToggles; i++){
 var imageParallax = document.getElementsByClassName('parallaxedpic');
 new simpleParallax(imageParallax,
    {
-	scale: 1.7,
+	scale: 1.9,
   orientation: 'down'
 });
 
