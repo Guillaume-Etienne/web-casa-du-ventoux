@@ -72,7 +72,7 @@
             <div class="parallaxedpic">
                 <img src="./img/2.webp" alt="intérieur de maison">
             </div>
-            <div class="paragraph white">
+            <div class="paragraph white" id="lamaison">
                 <h2>La Maison</h2>
                 <p class="italic hiddenmobile">
                     Cette petite maison de plein pied avec piscine privée vous invite à vous sentir chez vous. Décorée sobrement avec goût,
@@ -171,7 +171,7 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="./icons/veranda-solid.svg" alt="">
+                    <img src="./icons/veranda.svg" alt="">
                     <figcaption>                        
                         <h4>Terrasse</h4>
                         <p class="italic">Une terrasse de 40 m², équipée d’un voile d’ombrage avec un salon extérieur pour se détendre et une table et ses chaises pour vos repas et collations.</p>
@@ -188,7 +188,7 @@
                 <h2>Les Loisirs</h2>
                 <p class="italic hiddenmobile">
                     Un large panel d’activités s’offre à vous ! 
-                    <button class="hidden mini" id="togg3">...</button>
+                    <button class="hidden" id="togg3">.t.</button>
                 </p>
                 <p class="hidden italic" id="t3">Sportives : vélo, VTT, escalade, via ferrata, randonnées, accrobranche, parapente <br>
                     Culturelles : Vaison La Romaine 30 min, Avignon : 1h00, Marseille : 2h00 <br>
@@ -198,51 +198,83 @@
         </section>
 
 
-        <section>            
+        <section id="loisirs">            
             <div class="listing">
                 <figure>
-                    <img src="./icons/bed-solid.svg" alt="wifi">
+                    <img src="./icons/sport.svg" alt="personne qui court">
                     <figcaption>                        
-                        <h4>Chambres</h4>
-                        <p class="italic">✽Une chambre donne sur la terrasse avec un lit double (en 160 cm).
-                            ✽Une chambre à l'étage avec 2 lits simples pouvant devenir un lit double. +
-                            Tous les couchages sont équipés de couettes et d’oreillers avec leurs housses et leurs taies. Un jeu de serviettes est prévu pour chaque personne ainsi qu'un fouta.. 
-                            </p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./icons/sofa-solid.svg" alt="clef a molette">
-                    <figcaption>                        
-                        <h4>Salon</h4>
-                        <p class="italic">Doté d’un canapé convertible avec un sommier à lattes pouvant accueillir une 5ème personne, et un grand placard pour y ranger tous vos effets.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./icons/cuisine-solid.svg" alt="voiture">
-                    <figcaption>                        
-                        <h4>Cuisine</h4>
-                        <p class="italic">La cuisine est équipée à neuf : lave-vaisselle, machine à café filtre et expresso avec percolateur, four, micro-onde, cuisson gaz. +
-                            Les placards auront déjà un minimum (suffisamment pour démarrer vos vacances) : huile, sel, poivre, vinaigre, sucre, café, thé, filtres à café, pastilles lave-vaisselle, produit vaisselle, éponge, torchon, essuie-main…
-                            </p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./icons/house-solid.svg" alt="animal de compagnie">
-                    <figcaption>                        
-                        <h4>Vérenda</h4>
-                        <p class="italic">Une véranda pour prendre vos repas avec une table pouvant accueillir 6 personnes avec vue sur le Ventoux, le bassin et le jardin.
+                        <h4>Sport</h4>
+                        <p class="italic">
+                            vélo, VTT, escalade, via ferrata, canyoning, randonnées, équitation, accrobranche, parapente, même le ski est possible !
                         </p>
                     </figcaption>
                 </figure>
                 <figure>
-                    <img src="./icons/sdb-solid.svg" alt="animal de compagnie">
+                    <img src="./icons/archeology.svg" alt="site archéologique">
                     <figcaption>                        
-                        <h4>SDB</h4>
-                        <p class="italic">La salle de bain / WC est équipée d’une douche à l’italienne, d’un lavabo et d’un WC, accessible de plain pied. +
-                            Vous y trouverez également un séchoir à cheveux, du papier toilette et des produits de nettoyage…                            
+                        <h4>Culture</h4>
+                        <p class="italic">Vaison La Romaine : 30 min, Avignon : 1h00, Manosque : 1h00, Marseille : 2h00
                         </p>
                     </figcaption>
                 </figure>
+                <figure>
+                    <img src="./icons/hiking-solid.svg" alt="personnage de randonnée">
+                    <figcaption>                        
+                        <h4>Tourisme</h4>
+                        <p class="italic">les marchés régionaux, le colorado provençal, la route des vins (Vacqueyras/Gigondas∕châteauneuf du pape), la visite d’une distillerie de Lavande, la cueillette des champignons…</p>
+                    </figcaption>
+                </figure>
+                
+            </div>
+        </section>
+        <section class="paragraph" id="plus">            
+            <h2>Les plus</h2>
+            <div class="listing">
+                <figure>
+                    <img src="./icons/wifi-solid.svg" alt="wifi">
+                    <figcaption>                        
+                        <h4>wifi</h4>
+                        <p class="italic">Accès au wifi gratuit.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./icons/wrench-solid.svg" alt="clef a molette">
+                    <figcaption>                        
+                        <h4>Mini Atelier</h4>
+                        <p class="italic">Pour vos réparations de vélo, ainsi que l’espace pour le(s) laisser en lieu sûr.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./icons/car-side-solid.svg" alt="voiture">
+                    <figcaption>                        
+                        <h4>Parking</h4>
+                        <p class="italic">Deux emplacements sont prévus pour vos véhicules</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./icons/dog-solid.svg" alt="animal de compagnie">
+                    <figcaption>                        
+                        <h4>Animaux bienvenus</h4>
+                        <p class="italic">La Casa du Ventoux accueille vos animaux domestiques sous condition.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./icons/buanderie.svg" alt="tee-shirt">
+                    <figcaption>                        
+                        <h4>Buanderie</h4>
+                        <p class="italic">Equipée d’un lave-linge avec 4 à 5 doses de lessive, d’un fer et d’une table à repasser.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="./icons/bicycle-solid.svg" alt="vélo">
+                    <figcaption>                        
+                        <h4>Cyclisme</h4>
+                        <p class="italic">Location de vélo, coaching, sortie avec guide.
+                        </p>
+                    </figcaption>
+                </figure>                
             </div>
         </section>
 
@@ -253,7 +285,7 @@
 
     
         
-        
+    <button id="buttonDispos" onclick="window.open('https://calendar.google.com/calendar/embed?src=casaduventoux%40gmail.com&ctz=UTC','_blank');">Voir Disponibilités</button>
         <section class="paragraph" id="environs">            
             <h2>Le Village et les environs</h2>
             <div>
@@ -274,7 +306,7 @@
                 Pittoresque et typiquement provençale cette bourgade vous séduira par son charme.
             </p>            
         </section>        
-        <section id="lamaison" id="tarifs">         
+        <section  id="tarifs">         
             <!-- image de fond -->
             <div class="paragraph white">
                 <h2>tarifs</h2>
@@ -305,43 +337,7 @@
                 Ajouterons une galerie ici
             </p>            
         </section>        
-        <section class="paragraph" id="services">            
-            <h2>nos services</h2>
-            <div id="nosservices">
-                <figure>
-                    <img src="./icons/wifi-solid.svg" alt="wifi">
-                    <figcaption>                        
-                        <h4>wifi</h4>
-                        <p class="italic">Accès au wifi gratuit.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./icons/wrench-solid.svg" alt="clef a molette">
-                    <figcaption>                        
-                        <h4>Mini Atelier</h4>
-                        <p class="italic">Pour vos réparations de vélo, ainsi que l’espace pour le(s) laisser en lieu sûr.</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./icons/car-side-solid.svg" alt="voiture">
-                    <figcaption>                        
-                        <h4>Parking</h4>
-                        <p class="italic">Deux emplacements sont prévus pour vos véhicules</p>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="./icons/dog-solid.svg" alt="animal de compagnie">
-                    <figcaption>                        
-                        <h4>Animaux bienvenus</h4>
-                        <p class="italic">Nous vous prions d’être respectueux des personnes, de la nature
-                            et de garder vos compagnons proches de vous.
-                            Merci de ramasser après votre animal de compagnie.
-                        </p>
-                    </figcaption>
-                </figure>
-                <button id="buttonDispos" onclick="window.open('https://calendar.google.com/calendar/embed?src=casaduventoux%40gmail.com&ctz=UTC','_blank');">Voir Disponibilités</button>
-            </div>
-        </section>
+        
         <section class="paragraph">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.235895666323!2d5.3763819!3d44.1816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca671cf4cbb9fd%3A0x555d04a455c79dad!2sCasa%20du%20Ventoux!5e0!3m2!1sfr!2suk!4v1670059411568!5m2!1sfr!2suk" id="gmaps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>

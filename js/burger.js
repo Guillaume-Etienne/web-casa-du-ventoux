@@ -62,4 +62,13 @@ new simpleParallax(imageParallax,
 	scale: 1.9,
   orientation: 'down'
 });
+console.log("parllaxed trouvé ? : "+ imageParallax)
 
+//marche pas celle la :   (marche en right ou left mais pas up down)
+var imageParallax2 = document.getElementsByClassName('parallaxedpicmore');
+new simpleParallax(imageParallax2,
+   {
+	scale: 3,
+  orientation: 'down'
+});
+console.log("parllaxedpicmore trouvé ? : "+ imageParallax2)

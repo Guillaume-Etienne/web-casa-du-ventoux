@@ -5,6 +5,7 @@
         background: black;
         height: 80px;
         padding: 10px 20%;
+        
     }
     .sidenav {
         top: 20px;
@@ -63,7 +64,7 @@
     }
     $whitheight:250px;
     .white{        
-        margin: -$whitheight auto 0 auto;                
+        margin: -($whitheight+20) auto 90px auto;                
         padding: 10px;
         min-height: $whitheight;
         height: auto;
