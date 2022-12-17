@@ -294,12 +294,11 @@
         </section>        
         <section class="paragraph" id="galerie">            
             <h2>Galerie</h2>
-            <div>
-                <img src="./img/galery/gal.webp" alt="Beau jardin dans la nature">
+            <div class="hes-gallery">                
+                <img src="./img/galery/gal.webp" alt="image2" data-subtext="Podpis zdjęcia kolejnego" />
+                <img src="./img/galery/IMG_20211220_114455.jpg" alt="image3" data-subtext="Kolejny podpis zdjęcia" />
+                <img src="./img/galery/Village.webp" alt="image4" data-subtext="Podpis czwartego już zdjęcia" />
             </div>
-            <p class="italic">
-                Ajouterons une galerie ici
-            </p>            
         </section>
         <section  id="tarifs">         
             <!-- image de fond -->
@@ -356,4 +355,19 @@
 <script src="./js/aosPerso.js"></script>
 <script src="./js/simpleParallax.min.js"></script>
 <script src="./js/burger.js"></script>
+
+<!-- pour hes gallery  -->
+<link rel="stylesheet" href="/dist/hes-gallery.min.css" />
+<script src="./dist/hes-gallery.min.js"></script>
+<script>
+    HesGallery.setOptions({
+    disableScrolling: false,
+    hostedStyles: false,
+    animations: true,
+
+    showImageCount: true,
+    wrapAround: true,
+    })
+</script>
+
 </html>

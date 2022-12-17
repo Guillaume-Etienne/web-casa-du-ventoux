@@ -112,16 +112,7 @@ img{
         line-height: 2em;
     }
 }
-// #lamaison{
-//     margin-top: 30px;
-//     height: 400px;
-//     background: url(../img/2.webp) no-repeat  20% 20%;
-//     background-size:300% ;
-//     // test parallaxe
-//     background-attachment: fixed;
-//     background-position: center;
-//     // fin test
-// }
+
 .white{
     background-color: white;
     margin: -80px 33% 0 33%;
@@ -145,19 +136,6 @@ img{
 }
 #nosservices{
     margin-top: 40px; 
-    // & figure{        
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     & img{
-    //         width: 30px;
-    //     }
-    // }
-    // & figcaption{
-    //     & h4{
-    //         text-align: center;
-    //     }
-    // }
 }
 .listing{
     display: flex;
@@ -177,6 +155,16 @@ figcaption{
     max-width: 480px;
     & h4{
         text-align: center;
+    }
+}
+.hes-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    & img{
+        margin: 5px;
+        width: auto;
+        min-width: 200px;
+        max-width: 300px;
     }
 }
 

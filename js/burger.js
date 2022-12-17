@@ -1,5 +1,5 @@
-// burger / correction bug burger / button hidden /  parallax
-
+// burger / correction bug burger / button hidden /  parallax  / gallery
+// la galerie : https://www.cssscript.com/mobile-compatible-responsive-gallery-hesgallery/
 
 
 // ======================  burger : ===================
@@ -72,3 +72,8 @@ new simpleParallax(imageParallax2,
   orientation: 'down'
 });
 console.log("parllaxedpicmore trouvé ? : "+ imageParallax2)
+
+// ======================  Galery ===================
+// elle fonctionne bien, ici un script pour remplir le HTML avec le images trouvées dans le dossier
+
+
