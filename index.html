@@ -17,15 +17,15 @@
     <header>        
         <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">&times;</a>
-            <ul>
-                <li><a href="#intro" class="menuLinks">Bienvenu</a></li>
+            <ul>                
                 <li><a href="#lamaison" class="menuLinks">La maison</a></li>
                 <li><a href="#lejardin" class="menuLinks">Le jardin</a></li>
-                <li><a href="#activites" class="menuLinks">Les activités</a></li>
-                <li><a href="#environs" class="menuLinks">Les environs</a></li>
+                <li><a href="#loisirs" class="menuLinks">Les loisirs</a></li>
+                <li><a href="#plus" class="menuLinks">Les plus</a></li>
+                <li><a href="#village" class="menuLinks">le village</a></li>
+                <li><a href="#galerie" class="menuLinks">Galerie</a></li> 
                 <li><a href="#tarifs" class="menuLinks">Tarifs</a></li>
-                <li><a href="#galerie" class="menuLinks">Galerie</a></li>                
-                <li><a href="#serices" class="menuLinks">Services</a></li>
+                <li><a href="#disponible" class="menuLinks">Disponibilités</a></li>
                 <li><a href="#footlinks" class="menuLinks">Contact</a></li>
             </ul>
         </div>      
@@ -180,7 +180,7 @@
             </div>
         </section>
 
-        <section class="paragraph parallaxed">
+        <section class="paragraph parallaxed" id="loisirs">
             <div class="parallaxedpic">
                 <img src="./img/4.webp" alt="paysage de montagne">
             </div>
@@ -196,9 +196,7 @@
                 </p> 
             </div>
         </section>
-
-
-        <section id="loisirs">            
+        <section>            
             <div class="listing">
                 <figure>
                     <img src="./icons/sport.svg" alt="personne qui court">
@@ -217,7 +215,7 @@
                         </p>
                     </figcaption>
                 </figure>
-                <figure>
+                <figure id="plus">
                     <img src="./icons/hiking-solid.svg" alt="personnage de randonnée">
                     <figcaption>                        
                         <h4>Tourisme</h4>
@@ -227,7 +225,7 @@
                 
             </div>
         </section>
-        <section class="paragraph" id="plus">            
+        <section class="paragraph" >            
             <h2>Les plus</h2>
             <div class="listing">
                 <figure>
@@ -277,57 +275,23 @@
                 </figure>                
             </div>
         </section>
-
-
-<!-- cache moi tout ça -->
-
-<div class="hidden">
-
-    
-        
-    <button id="buttonDispos" onclick="window.open('https://calendar.google.com/calendar/embed?src=casaduventoux%40gmail.com&ctz=UTC','_blank');">Voir Disponibilités</button>
-        <section class="paragraph" id="environs">            
-            <h2>Le Village et les environs</h2>
+        <section class="paragraph" id="village">
             <div>
-                <img src="./img/Village.webp" alt="village dans la nature">
+                <img src="./img/5.webp" alt="village dans la nature">
             </div>
+            <h2>Le Village et les environs</h2>
             <p class="italic">
-                Ils sont nombreux et pleins de charme, laissez nous vous les présenter : <button class="mini" id="togg4">...</button>
+                Savoillans est un petit village de Provence situé au cœur du parc régional du Mont Ventoux où les journées sont rythmées par les jeux de boules et les discussions sur les bancs.<button class="mini" id="togg4">+</button>
             </p>
-            <p class="hidden italic" id="t4">       
-                <em>Savoillans</em>  est un petit village de Provence, où les journées sont rythmées par les jeux de boules et les discussions sur les bancs.
-                Vous pourrez aller chercher à pied, au village, du pain et des viennoiseries à la boulangerie artisanale avec une cuisson au feu de bois.
+            <p class="hidden italic" id="t4">   ☛ Vous pourrez aller chercher à pied, au village, du pain et des viennoiseries cuits au feu de bois à la boulangerie artisanale. 
                 L’auberge vous accueillera pour une collation ou un repas gourmand. <br>
-                La vallée du Toulourenc longe la face nord du Ventoux, 3 villages : <br>
-                <em>Saint-Léger du Ventoux, Brantes et Savoillans</em>. La rivière Le Toulourenc coule (partiellement sec en été) à 50 mètres de la maison. <br>
-                <em>Montbrun les Bains :</em> Classé comme un des plus beaux villages de France, c’est aussi une Station thermale. Vous y trouverez un petit supermarché, une station essence,
-                une pharmacie, des restaurants et des cafés et quelques commerces (10 min en voiture). <br>
-                <em>Sault</em> à 20 minutes de route, ce gros village vous offre toutes les commodités d’une petite ville. Supermarché, station essence, pharmacie, commerces.
-                Pittoresque et typiquement provençale cette bourgade vous séduira par son charme.
+                ☛ La rivière Le Toulourenc coule dans la vallée, elle est à 50 m de la maison et abreuve 3 villages ! Saint-Léger du Ventoux, Brantes et Savoillans.<br>
+                ☛Montbrun les Bains : classé comme un des plus beaux villages de France, c’est aussi une Station thermale. Vous y trouverez un petit supermarché, une station essence, une pharmacie, des restaurants, des cafés et quelques commerces (10 min en voiture).<br>
+                ☛ Sault, à 20 minutes de route, vous offre toutes les commodités d’une petite ville : supermarché, station essence, pharmacie, commerces. Charmante et typiquement provençale cette bourgade vous séduira par son charme.<br>
+                ☛ Les baronnies sont à 20 min en voiture, son marché pittoresque a lieu le mercredi à Buis les Baronnies.<br>
+                ☛ Le parc du Lubéron et ses villages mythiques sont à 30 min en voiture.                
             </p>            
         </section>        
-        <section  id="tarifs">         
-            <!-- image de fond -->
-            <div class="paragraph white">
-                <h2>tarifs</h2>
-                <p class="italic">
-                    Adaptés en fonction de la saison, voici nos tarifs et conditions : <button class="mini" id="togg5">...</button>
-                </p>
-                <p class="hidden italic" id="t5">                 
-                Du 1er Juin au 30 Juin : 180 € / nuit<br>
-                du 1er Juillet au 31 Août : 215 € / nuit<br>
-                du 1er Septembre au 30 Septembre : 180 € / nuit<br>
-                du 1er Octobre au 31 Mai : 150 € / nuit<br>
-                <em>Conditions :</em>
-                Ménage obligatoire : 90€<br>
-                animaux acceptés (sup de 80 € / animal pour la semaine)<br>
-                en haute saison la location est du samedi au samedi (mini 7 nuits) <br>
-                Une caution de 1000 € est demandée à votre arrivée.
-                </p>                
-                <!-- <button onclick="window.open('https://calendar.google.com/calendar/embed?src=casaduventoux%40gmail.com&ctz=UTC','_blank');">Voir Disponibilités</button> -->
-                
-            </div>
-        </section>
         <section class="paragraph" id="galerie">            
             <h2>Galerie</h2>
             <div>
@@ -336,22 +300,47 @@
             <p class="italic">
                 Ajouterons une galerie ici
             </p>            
-        </section>        
-        
+        </section>
+        <section  id="tarifs">         
+            <!-- image de fond -->
+            <div class="paragraph">
+                <h2>tarifs</h2>
+                <p class="italic">
+                    Adaptés en fonction de la saison, voici nos tarifs et conditions : <button class="mini" id="togg5">...</button>
+                </p>
+                <p class="hidden italic" id="t5">                 
+                    Du 1/07 au 31/08 : Haute saison : 1500€/semaine, 7 nuits du samedi au samedi.
+                    Les mois de juin et septembre : 170€/nuit (mini 4 nuits)
+                    Le reste de l’année : 150€/nuit (mini 4 nuits)
+                    Ménage obligatoire : 90€
+                    Supplément animal de compagnie : 80€/séjour
+                    Taxe de séjour à régler sur place
+                    Draps et serviettes compris. 
+                    Chèque de caution de 1000€ (non encaissé) et restitué une semaine après le départ.
+                    Réservation confirmée après réception du contrat signé et de l'acompte versé sur le compte bancaire.                    
+                </p>                
+                <button class="centered" id="disponible" onclick="window.open('https://calendar.google.com/calendar/embed?src=casaduventoux%40gmail.com&ctz=UTC','_blank');">Voir Disponibilités</button>                
+            </div>
+        </section>  
+
         <section class="paragraph">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.235895666323!2d5.3763819!3d44.1816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ca671cf4cbb9fd%3A0x555d04a455c79dad!2sCasa%20du%20Ventoux!5e0!3m2!1sfr!2suk!4v1670059411568!5m2!1sfr!2suk" id="gmaps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+        <section class="paragraph">
+            <p>Au plaisir de vous accueillir ! 
+                Cécile et Peer.
+            </p>
+        </section>        
     </main>
-
-</div>    
-
-<!-- cache moi tout ça -->
-
     <footer>
         <div id="footlinks">
             <p>Cécile et Peer : +33 7 78 79 76 35</p>
             <p>La Casa du Ventoux, quartier Jean Pascal, 84390 Savoillan</p>
             <p> <a href="mailto:casaduventoux@gmail.com">casaduventoux@gmail.com</a></p>
+        </div>
+        <div id="socialnetworks">
+            <a href="#"><img src="./icons/facebook.svg" alt=""></a>
+            <a href="#"><img src="./icons/instagram.svg" alt=""></a>            
         </div>
         <div>
             <p id="copyright">

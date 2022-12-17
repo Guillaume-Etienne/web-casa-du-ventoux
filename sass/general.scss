@@ -205,6 +205,14 @@ footer{
         font-family: 'Kalam', cursive;
         
     }
+    & img{
+        margin-top: 0;
+        height: 50px;
+        width: auto;
+        background: white;
+        padding: 8px;
+        border-radius: 20px;
+    }
     & #footicons{
         display: flex;
         padding: 0;
@@ -293,6 +301,10 @@ button {
     // linear grad pour assombrir
     background-size: cover;    
     padding: 250px 0 0 0;
+}
+
+.centered{
+    margin: 10px auto;
 }
 
 // vite fais pour la prez
